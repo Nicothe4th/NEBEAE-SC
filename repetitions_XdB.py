@@ -71,12 +71,12 @@ rho = 0.95
 Lambda = 0.46
 tau=3e4
 nu=2e4
-nRow=parameters=nsamples
-nCol=parameters=nsamples
-epsilon=parameters=1e-3
-maxiter=parameters=20
-parallel=parameters=0
-display=parameters=0 
+nRow=nsamples
+nCols=nsamples
+epsilon=1e-3
+maxiters=20
+parallel=0
+display=0 
 
 parameters = [initcond, rho, Lambda, tau, nu, nRow, nCol, epsilon, maxiter, parallel, display] 
 
