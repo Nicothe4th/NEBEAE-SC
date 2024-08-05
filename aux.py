@@ -42,13 +42,13 @@ def Anova(ERec, EEnd, EAb, time):
     
     # Crear un gráfico de caja para visualizar los datos
     plt.figure()
-    plt.boxplot(ERec, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM'])
+    plt.boxplot(ERec, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM','SeCoDe','gtvMBO'])
     plt.title('Comparison of Methodologies')
     plt.xlabel('Metodology')
     plt.ylabel('Output Estimation Error')
     plt.show()
     
-    df_ERec = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM', 'UNSUBMM'],
+    df_ERec = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM', 'UNSUBMM','SeCoDe','gtvMBO'],
                        'Mean': means_ERec,
                        'Standard Deviation': std_devs_ERec})
     print('Output Estimation Error')
@@ -74,13 +74,13 @@ def Anova(ERec, EEnd, EAb, time):
     
     # Crear un gráfico de caja para visualizar los datos
     plt.figure()
-    plt.boxplot(EEnd, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM'])
+    plt.boxplot(EEnd, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM','SeCoDe','gtvMBO'])
     plt.title('Comparison of Methodologies')
     plt.xlabel('Metodology')
     plt.ylabel('End-members Estimation Error')
     plt.show()
     
-    df_EEnd = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM'],
+    df_EEnd = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM','SeCoDe','gtvMBO'],
                        'Mean': means_EEnd,
                        'Standard Deviation': std_devs_EEnd})
     print('End-members Estimation Error')
@@ -106,13 +106,13 @@ def Anova(ERec, EEnd, EAb, time):
     
     # Crear un gráfico de caja para visualizar los datos
     plt.figure()
-    plt.boxplot(EAb, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM'])
+    plt.boxplot(EAb, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM','SeCoDe','gtvMBO'])
     plt.title('Comparison of Methodologies')
     plt.xlabel('Metodology')
     plt.ylabel('Abundances Estimation Error')
     plt.show()
     
-    df_EAb = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM'],
+    df_EAb = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM','SeCoDe','gtvMBO'],
                        'Mean': means_EAb,
                        'Standard Deviation': std_devs_EAb})
     print('Abundances Estimation Error')
@@ -137,14 +137,14 @@ def Anova(ERec, EEnd, EAb, time):
     
     # Crear un gráfico de caja para visualizar los datos
     plt.figure()
-    plt.boxplot(time, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'EBEAE','UNSUBMM'])
+    plt.boxplot(time, labels=['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'EBEAE','UNSUBMM','SeCoDe','gtvMBO'])
     plt.title('Comparison of Methodologies')
     plt.xlabel('Metodology')
     plt.ylabel('Computational Time (s)')
     plt.show()
     
     print('Computational Time (s)')
-    df_time = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM'],
+    df_time = pd.DataFrame({'Metodology': ['NEBEAE-SC', 'NEBEAE', 'EBEAE-SC', 'G-MLM','UNSUBMM','SeCoDe','gtvMBO'],
                        'Mean': means_time,
                        'Standard Deviation': std_devs_time})
     
