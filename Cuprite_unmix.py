@@ -102,12 +102,12 @@ rho = 0.1
 Lambda = 0.46
 tau=3e4
 nu=2e4
-nRow=parameters=ypixels
-nCol=parameters=xpixels
-epsilon=parameters=1e-3
-maxiter=parameters=20
-parallel=parameters=0
-display=parameters=0 
+nRow=ypixels
+nCol=xpixels
+epsilon=1e-3
+maxiter=20
+parallel=0
+display=0 
 
 parameters = [initcond, rho, Lambda, tau, nu, nRow, nCol, epsilon, maxiter, parallel, display] 
 
